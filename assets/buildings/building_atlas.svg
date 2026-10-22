@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="256" viewBox="0 0 384 256" shape-rendering="crispEdges">
+<title>Original Virtual City building atlas — 3 columns × 2 rows, 128×128 cells</title>
+<g transform="translate(0 0)">
+<ellipse cx="64" cy="115" rx="49" ry="10" fill="#253c35" opacity=".22"/>
+<path d="M20 55 64 31 108 55 64 80Z" fill="#e7b66c" stroke="#5c453a" stroke-width="3"/><path d="M20 55 64 80 64 119 20 94Z" fill="#c87f57" stroke="#5c453a" stroke-width="3"/><path d="M64 80 108 55 108 94 64 119Z" fill="#a85f4b" stroke="#5c453a" stroke-width="3"/><path d="M15 53 64 25 113 53 108 61 64 37 20 61Z" fill="#9e4d43" stroke="#5c453a" stroke-width="3"/><path d="M32 64 48 73 48 91 32 82Z" fill="#a9d7d4" stroke="#5c453a" stroke-width="2"/><path d="M75 81 91 72 91 88 75 97Z" fill="#a9d7d4" stroke="#5c453a" stroke-width="2"/><path d="M50 99 64 107 64 119 50 111Z" fill="#62453d"/><path d="M29 57 39 63M71 41 87 50" stroke="#f4d59a" stroke-width="3"/>
+</g>
+<g transform="translate(128 0)">
+<ellipse cx="64" cy="117" rx="51" ry="9" fill="#253c35" opacity=".22"/>
+<path d="M17 47 64 22 111 47 64 74Z" fill="#5b8791" stroke="#384f5b" stroke-width="3"/><path d="M17 47 64 74 64 119 17 92Z" fill="#e0b98a" stroke="#384f5b" stroke-width="3"/><path d="M64 74 111 47 111 92 64 119Z" fill="#c79b71" stroke="#384f5b" stroke-width="3"/><path d="M17 47 64 22 111 47 111 55 64 30 17 55Z" fill="#86b5b6" stroke="#384f5b" stroke-width="2"/><path d="M28 56 43 64 43 79 28 71Z M48 68 58 74 58 89 48 83Z" fill="#8bc8d0" stroke="#384f5b" stroke-width="2"/><path d="M73 78 88 69 88 84 73 93Z M92 67 102 61 102 76 92 82Z" fill="#8bc8d0" stroke="#384f5b" stroke-width="2"/><path d="M49 101 64 110 64 119 49 110Z" fill="#735246"/>
+</g>
+<g transform="translate(256 0)">
+<ellipse cx="64" cy="116" rx="52" ry="9" fill="#253c35" opacity=".22"/>
+<path d="M15 55 64 27 113 55 64 83Z" fill="#e9d19a" stroke="#5b5044" stroke-width="3"/><path d="M15 55 64 83 64 119 15 91Z" fill="#d2a66e" stroke="#5b5044" stroke-width="3"/><path d="M64 83 113 55 113 91 64 119Z" fill="#b78157" stroke="#5b5044" stroke-width="3"/><path d="M15 55 64 27 113 55 113 64 64 36 15 64Z" fill="#3f8e83" stroke="#5b5044" stroke-width="3"/><path d="M31 66 47 75 47 91 31 82Z" fill="#a7e0d4" stroke="#5b5044" stroke-width="2"/><path d="M77 88 96 77 96 92 77 103Z" fill="#a7e0d4" stroke="#5b5044" stroke-width="2"/><path d="M52 100 64 107 64 119 52 112Z" fill="#69483c"/><path d="M48 46 64 37 80 46 64 55Z" fill="#f3e2b6" stroke="#5b5044" stroke-width="2"/>
+</g>
+<g transform="translate(0 128)">
+<ellipse cx="64" cy="117" rx="53" ry="9" fill="#253c35" opacity=".22"/>
+<path d="M12 56 64 26 116 56 64 86Z" fill="#d7c8a3" stroke="#554d45" stroke-width="3"/><path d="M12 56 64 86 64 119 12 89Z" fill="#b5a184" stroke="#554d45" stroke-width="3"/><path d="M64 86 116 56 116 89 64 119Z" fill="#92806b" stroke="#554d45" stroke-width="3"/><path d="M12 56 64 26 116 56 116 64 64 35 12 64Z" fill="#718f98" stroke="#554d45" stroke-width="3"/><path d="M23 67 42 78 42 91 23 80Z M48 81 58 87 58 101 48 95Z" fill="#9ed6d9" stroke="#554d45" stroke-width="2"/><path d="M75 91 94 80 94 94 75 105Z M99 77 108 72 108 85 99 90Z" fill="#9ed6d9" stroke="#554d45" stroke-width="2"/><path d="M47 48 64 38 81 48 64 58Z" fill="#f1e5c8" stroke="#554d45" stroke-width="2"/>
+</g>
+<g transform="translate(128 128)">
+<ellipse cx="64" cy="117" rx="53" ry="9" fill="#253c35" opacity=".22"/>
+<path d="M14 59 64 31 114 59 64 88Z" fill="#d7b37d" stroke="#5c483d" stroke-width="3"/><path d="M14 59 64 88 64 119 14 90Z" fill="#c38c5e" stroke="#5c483d" stroke-width="3"/><path d="M64 88 114 59 114 90 64 119Z" fill="#a66c50" stroke="#5c483d" stroke-width="3"/><path d="M14 59 64 31 114 59 114 67 64 40 14 67Z" fill="#b84f46" stroke="#5c483d" stroke-width="3"/><path d="M28 69 44 78 44 91 28 82Z" fill="#a9d7d4" stroke="#5c483d" stroke-width="2"/><path d="M75 94 91 85 91 99 75 108Z" fill="#a9d7d4" stroke="#5c483d" stroke-width="2"/><path d="M50 100 64 108 64 119 50 111Z" fill="#65463b"/><path d="M45 49 64 39 83 49 64 60Z" fill="#f0d59d" stroke="#5c483d" stroke-width="2"/>
+</g>
+<g transform="translate(256 128)">
+<ellipse cx="64" cy="117" rx="53" ry="9" fill="#253c35" opacity=".22"/>
+<path d="M12 55 64 25 116 55 64 85Z" fill="#d5b17a" stroke="#5b4a40" stroke-width="3"/><path d="M12 55 64 85 64 119 12 89Z" fill="#c08d60" stroke="#5b4a40" stroke-width="3"/><path d="M64 85 116 55 116 89 64 119Z" fill="#9d6a50" stroke="#5b4a40" stroke-width="3"/><path d="M12 55 64 25 116 55 116 64 64 34 12 64Z" fill="#e2a55e" stroke="#5b4a40" stroke-width="3"/><path d="M27 66 43 75 43 91 27 82Z" fill="#a9d7d4" stroke="#5b4a40" stroke-width="2"/><path d="M77 91 94 81 94 97 77 107Z" fill="#a9d7d4" stroke="#5b4a40" stroke-width="2"/><path d="M48 49 64 40 80 49 64 59Z" fill="#fff0bf" stroke="#5b4a40" stroke-width="2"/><path d="M52 100 64 107 64 119 52 112Z" fill="#65463b"/>
+</g>
+</svg>
