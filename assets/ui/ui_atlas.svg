@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="128" viewBox="0 0 256 128" shape-rendering="crispEdges">
+<title>Virtual City UI icon atlas — 4 columns × 2 rows, 64×64 cells</title>
+<g transform="translate(0 0)"><path d="M9 12Q9 6 16 6H48Q55 6 55 13V34Q55 41 48 41H30L19 51V41H16Q9 41 9 34Z" fill="#f5e5c3" stroke="#55483d" stroke-width="3"/><path d="M17 17h29M17 24h22M17 31h15" stroke="#887761" stroke-width="3"/></g>
+<g transform="translate(64 0)"><path d="M32 5C19 5 12 14 12 25c0 12 20 31 20 31s20-19 20-31C52 14 45 5 32 5Z" fill="#d45e52" stroke="#63443d" stroke-width="3"/><circle cx="32" cy="25" r="8" fill="#ffe8b4" stroke="#63443d" stroke-width="2"/><circle cx="32" cy="25" r="3" fill="#d45e52"/></g>
+<g transform="translate(128 0)"><circle cx="32" cy="29" r="22" fill="#f4e7c7" stroke="#5c5145" stroke-width="3"/><path d="M18 30h28M32 16v28" stroke="#6c8f78" stroke-width="5"/><circle cx="32" cy="29" r="5" fill="#d45e52"/></g>
+<g transform="translate(192 0)"><path d="M12 12h40v29H31L20 50V41H12Z" fill="#b5d9d4" stroke="#4b5f5c" stroke-width="3"/><path d="M19 21h26M19 28h19" stroke="#4b5f5c" stroke-width="3"/><circle cx="44" cy="43" r="8" fill="#d45e52" stroke="#4b5f5c" stroke-width="2"/><path d="M41 43h6" stroke="#fff2d1" stroke-width="2"/></g>
+<g transform="translate(0 64)"><path d="M32 7 54 19 54 43 32 56 10 43 10 19Z" fill="#e5c277" stroke="#5c5145" stroke-width="3"/><path d="M32 15 45 22 45 39 32 47 19 39 19 22Z" fill="#fff0bd" stroke="#5c5145" stroke-width="2"/><path d="M32 21v13m-6-6h12" stroke="#d45e52" stroke-width="4"/></g>
+<g transform="translate(64 64)"><path d="M10 19h44v31H10Z" fill="#f4e6c7" stroke="#5c5145" stroke-width="3"/><path d="M10 19 32 7 54 19" fill="#d45e52" stroke="#5c5145" stroke-width="3"/><path d="M20 29h24M20 36h17M20 43h20" stroke="#8d8069" stroke-width="3"/></g>
+<g transform="translate(128 64)"><circle cx="32" cy="30" r="23" fill="#d8e8d4" stroke="#4f6653" stroke-width="3"/><path d="M20 30 28 38 44 20" fill="none" stroke="#4f956a" stroke-width="5"/><path d="M13 53h38" stroke="#4f6653" stroke-width="3"/></g>
+<g transform="translate(192 64)"><path d="M16 10h32v43H16Z" fill="#c5d9e0" stroke="#4d5b64" stroke-width="3"/><path d="M23 19h18M23 27h18M23 35h12" stroke="#4d5b64" stroke-width="3"/><path d="M23 44h18" stroke="#d45e52" stroke-width="4"/></g>
+</svg>
