@@ -1,0 +1,105 @@
+{
+  "project": "Virtual City",
+  "version": "0.1.0",
+  "format": "SVG",
+  "tileConvention": {
+    "width": 64,
+    "height": 32,
+    "projection": "isometric 2:1"
+  },
+  "assets": [
+    {
+      "id": "terrain",
+      "path": "assets/tiles/terrain_atlas.svg",
+      "cell": {
+        "width": 64,
+        "height": 32
+      },
+      "columns": 6,
+      "rows": 6,
+      "usage": "terrain tiles"
+    },
+    {
+      "id": "buildings",
+      "path": "assets/buildings/building_atlas.svg",
+      "cell": {
+        "width": 128,
+        "height": 128
+      },
+      "columns": 3,
+      "rows": 2,
+      "usage": "building illustrations; transparent padding is intentional"
+    },
+    {
+      "id": "nature",
+      "path": "assets/nature/nature_atlas.svg",
+      "cell": {
+        "width": 64,
+        "height": 64
+      },
+      "columns": 4,
+      "rows": 3,
+      "usage": "trees, shrubs and flowers"
+    },
+    {
+      "id": "props",
+      "path": "assets/props/props_atlas.svg",
+      "cell": {
+        "width": 64,
+        "height": 64
+      },
+      "columns": 5,
+      "rows": 3,
+      "usage": "street furniture and decorations"
+    },
+    {
+      "id": "residents",
+      "path": "assets/characters/resident_atlas.svg",
+      "cell": {
+        "width": 64,
+        "height": 64
+      },
+      "columns": 4,
+      "rows": 4,
+      "usage": "resident color variants and directions; static poses"
+    },
+    {
+      "id": "vehicles",
+      "path": "assets/vehicles/vehicle_atlas.svg",
+      "cell": {
+        "width": 128,
+        "height": 64
+      },
+      "columns": 2,
+      "rows": 2,
+      "usage": "small cars and service vans"
+    },
+    {
+      "id": "ui",
+      "path": "assets/ui/ui_atlas.svg",
+      "cell": {
+        "width": 64,
+        "height": 64
+      },
+      "columns": 4,
+      "rows": 2,
+      "usage": "chat and world UI icons"
+    }
+  ],
+  "palette": {
+    "grass": "#78B85B",
+    "leaf": "#62B962",
+    "road": "#59636B",
+    "paving": "#B4B9B5",
+    "water": "#4C9DBB",
+    "warmWall": "#C87F57",
+    "roof": "#9E4D43",
+    "outline": "#4B3B38",
+    "highlight": "#F3D77A"
+  },
+  "notes": [
+    "Original repository-authored assets; no third-party game art ripped or included.",
+    "Resident sheet currently contains static directional poses, not walk-cycle animation frames.",
+    "Atlas cell sizes are descriptive; review each SVG before setting Godot atlas regions."
+  ]
+}
