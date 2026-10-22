@@ -1,0 +1,1 @@
+{"name":"asset-game-realtime","private":true,"version":"0.1.0","type":"module","scripts":{"dev":"tsx watch src/server.ts","start":"tsx src/server.ts","typecheck":"tsc --noEmit"},"dependencies":{"ws":"^8.18.0"},"devDependencies":{"@types/node":"^22.15.30","@types/ws":"^8.18.1","tsx":"^4.19.4","typescript":"~5.8.3"}}

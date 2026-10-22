@@ -1,0 +1,18 @@
+import { createServer } from 'node:http';
+import { randomUUID } from 'node:crypto';
+import { WebSocket, WebSocketServer } from 'ws';
+const port=Number(process.env.PORT||8080);
+const origins=(process.env.ALLOWED_ORIGINS||'').split(',').map(x=>x.trim()).filter(Boolean);
+type Citizen={id:string;name:string;x:number;z:number;tx:number;tz:number;speed:number};
+type Peer={id:string;name:string;socket:WebSocket};
+const citizens:Citizen[]=[['Nara Putri',-3,-2],['Bima Arta',2,3],['Sora Wulan',4,-1],['Dimas K',-5,2],['Mika Lestari',1,-5],['Raka Adi',-1,4],['Tari Senja',6,2],['Juno Pratama',-6,-3],['Luna Kirana',3,5],['Ari Wijaya',-4,5],['Niko Tama',5,-4],['Citra Dewi',-2,-5]].map((p,i)=>({id:'npc-'+(i+1),name:p[0],x:p[1],z:p[2],tx:p[1],tz:p[2],speed:.35+i%4*.08}));
+const peers=new Map<WebSocket,Peer>();
+const http=createServer((_req,res)=>{res.writeHead(200,{'content-type':'application/json'});res.end(JSON.stringify({service:'asset-game-realtime',status:'ok',clients:peers.size}));});
+const wss=new WebSocketServer({server:http,maxPayload:8192});
+function send(ws:WebSocket,p:unknown){if(ws.readyState===WebSocket.OPEN)ws.send(JSON.stringify(p));}
+function broadcast(p:unknown){wss.clients.forEach(ws=>send(ws,p));}
+function moveGoal(c:Citizen){const spots=[[0,0],[-3,-3],[3,2],[-5,1],[5,-4],[1,5],[-7,-2],[7,3],[-2,7]];const p=spots[Math.floor(Math.random()*spots.length)];c.tx=p[0]+Math.random()-.5;c.tz=p[1]+Math.random()-.5;}
+function snapshot(){return{type:'world:snapshot',serverTime:Date.now(),online:peers.size,residents:citizens.map(({id,name,x,z})=>({id,name,x,z}))};}
+wss.on('connection',(ws,req)=>{const origin=req.headers.origin;if(origins.length&&origin&&!origins.includes(origin)){ws.close(1008,'Origin not allowed');return;}const peer:Peer={id:randomUUID(),name:'Pengunjung',socket:ws};peers.set(ws,peer);send(ws,{type:'world:hello',protocol:1,clientId:peer.id});send(ws,snapshot());ws.on('message',raw=>{let p:any;try{p=JSON.parse(raw.toString())}catch{send(ws,{type:'world:error',message:'JSON tidak valid'});return;}if(!p||typeof p.type!=='string')return;if(p.type==='world:join'){peer.name=typeof p.displayName==='string'?p.displayName.replace(/[<>\r\n]/g,'').slice(0,24)||'Pengunjung':'Pengunjung';send(ws,{type:'world:system',text:'Selamat datang, '+peer.name+'.'});broadcast({type:'world:presence',online:peers.size});return;}if(p.type==='chat:send'){const text=typeof p.text==='string'?p.text.trim().slice(0,240):'';if(!text)return;const channel=p.channel==='private'?'private':'global';const message={author:peer.name,text,time:new Date().toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'})};if(channel==='global'){broadcast({type:'world:chat',channel,message});return;}const target=[...peers.values()].find(x=>x.id===p.targetId);if(!target){send(ws,{type:'world:error',message:'Penerima online tidak ditemukan.'});return;}send(ws,{type:'world:chat',channel,message});if(target.socket!==ws)send(target.socket,{type:'world:chat',channel,message});}});ws.on('close',()=>{peers.delete(ws);broadcast({type:'world:presence',online:peers.size});});ws.on('error',()=>peers.delete(ws));});
+setInterval(()=>{for(const c of citizens){const dx=c.tx-c.x,dz=c.tz-c.z,d=Math.hypot(dx,dz);if(d<.2){moveGoal(c);continue;}const step=Math.min(d,c.speed*.5);c.x+=dx/d*step;c.z+=dz/d*step;}broadcast(snapshot());},500);
+http.listen(port,()=>console.log('Asset-game realtime listening on :'+port));
