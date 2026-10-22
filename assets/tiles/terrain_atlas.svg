@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="192" viewBox="0 0 384 192" shape-rendering="crispEdges">
+<title>Virtual City terrain atlas — 6 columns × 6 rows, 64×32 cells</title>
+<defs>
+ <g id="grass"><path d="M32 1 63 16 32 31 1 16Z" fill="#78b85b" stroke="#355d42" stroke-width="1.5"/><path d="m8 16 24-12 24 12-24 12Z" fill="#8ccc68"/><path d="m13 14 3-2m27 10 3-2M29 19l2-2" stroke="#b1df79" stroke-width="2"/></g>
+ <g id="path"><use href="#grass"/><path d="M14 16 32 7 50 16 32 25Z" fill="#c6a675"/><path d="m20 15 5-3m9 11 4-2m3-7 3 2" stroke="#e4c99b" stroke-width="2"/></g>
+ <g id="road"><path d="M32 1 63 16 32 31 1 16Z" fill="#59636b" stroke="#303d46" stroke-width="1.5"/><path d="M32 5 55 16 32 27 9 16Z" fill="#69747b"/><path d="m27 12 5-2 5 2-5 2Z M27 20l5-2 5 2-5 2Z" fill="#f3d77a"/></g>
+ <g id="pave"><path d="M32 1 63 16 32 31 1 16Z" fill="#b4b9b5" stroke="#5d6c69" stroke-width="1.5"/><path d="m32 5 22 11-22 11-22-11Z" fill="#cbd0c9"/><path d="m21 11 22 11m-11-17v22" stroke="#a0aaa4" stroke-width="1"/></g>
+ <g id="water"><path d="M32 1 63 16 32 31 1 16Z" fill="#4c9dbb" stroke="#2d647c" stroke-width="1.5"/><path d="m12 16 11-5m7 13 10-5m-1-9 6 3" stroke="#a3e5e9" stroke-width="2"/></g>
+ <g id="sand"><path d="M32 1 63 16 32 31 1 16Z" fill="#d9c27c" stroke="#89764a" stroke-width="1.5"/><path d="m12 17 5-2m20 8 5-3m-5-10 3 1" stroke="#f1dfa0" stroke-width="2"/></g>
+</defs>
+<g transform="translate(0 0)"><use href="#grass"/></g><g transform="translate(64 0)"><use href="#path"/></g><g transform="translate(128 0)"><use href="#road"/></g><g transform="translate(192 0)"><use href="#pave"/></g><g transform="translate(256 0)"><use href="#water"/></g><g transform="translate(320 0)"><use href="#sand"/></g>
+<g transform="translate(0 32)"><use href="#grass"/><path d="m32 1 31 15-31 15-31-15Z" fill="none" stroke="#5b984e" stroke-width="2"/></g>
+<g transform="translate(64 32)"><use href="#path"/><path d="m2 16 30 15 30-15" fill="none" stroke="#9e805a" stroke-width="2"/></g>
+<g transform="translate(128 32)"><use href="#road"/><path d="M4 16h12m8 0h16m8 0h12" stroke="#f3d77a" stroke-width="2"/></g>
+<g transform="translate(192 32)"><use href="#pave"/><path d="m32 1 0 30m-31-15h62" stroke="#e0e3db" stroke-width="1"/></g>
+<g transform="translate(256 32)"><use href="#water"/><path d="m13 14 9-4m12 10 10-4" stroke="#d1f3ec" stroke-width="2"/></g>
+<g transform="translate(320 32)"><use href="#sand"/><path d="m14 18 2-1m20-8 3 1m-4 13 2-1" stroke="#a9945f" stroke-width="2"/></g>
+<g transform="translate(0 64)"><use href="#grass"/><path d="m25 15 3-3 3 3-3 3Z m11-7 3-3 3 3-3 3Z" fill="#f3db74"/></g>
+<g transform="translate(64 64)"><use href="#path"/><path d="m8 16 8-4 8 4-8 4Z" fill="#ad8c61"/></g>
+<g transform="translate(128 64)"><use href="#road"/><path d="M8 16h48" stroke="#f5e6b4" stroke-width="1.5" stroke-dasharray="5 5"/></g>
+<g transform="translate(192 64)"><use href="#pave"/><path d="m16 8 16 8-16 8m16-16 16 8-16 8" fill="none" stroke="#a0aaa4" stroke-width="1.5"/></g>
+<g transform="translate(256 64)"><use href="#water"/><path d="m18 11 8-3m7 11 8-3" stroke="#d1f3ec" stroke-width="2"/></g>
+<g transform="translate(320 64)"><use href="#sand"/><path d="m16 12 4 1m15 8 5-2" stroke="#a9945f" stroke-width="2"/></g>
+<g transform="translate(0 96)"><use href="#grass"/><path d="m31 8 3 4-3 4-3-4Z m12 8 3 3-3 3-3-3Z" fill="#f0a6bb"/></g>
+<g transform="translate(64 96)"><use href="#path"/><path d="m25 13 5-2m5 7 4-2" stroke="#8d7454" stroke-width="2"/></g>
+<g transform="translate(128 96)"><use href="#road"/><path d="m32 6 0 4m0 5v4m0 5v3" stroke="#f3d77a" stroke-width="2"/></g>
+<g transform="translate(192 96)"><use href="#pave"/><path d="m8 16 24-12 24 12-24 12Z" fill="none" stroke="#8d9993" stroke-width="1"/></g>
+<g transform="translate(256 96)"><use href="#water"/><path d="m9 16 10-5m15 11 9-4" stroke="#d1f3ec" stroke-width="2"/></g>
+<g transform="translate(320 96)"><use href="#sand"/><path d="m18 14 3-1m16 7 4-2" stroke="#a9945f" stroke-width="2"/></g>
+<g transform="translate(0 128)"><use href="#grass"/><path d="M1 16 32 31 63 16" fill="none" stroke="#477a49" stroke-width="2"/></g>
+<g transform="translate(64 128)"><use href="#path"/><path d="m1 16 31 15 31-15" fill="none" stroke="#9e805a" stroke-width="2"/></g>
+<g transform="translate(128 128)"><use href="#road"/><path d="m1 16 31 15 31-15" fill="none" stroke="#303d46" stroke-width="2"/></g>
+<g transform="translate(192 128)"><use href="#pave"/><path d="m1 16 31 15 31-15" fill="none" stroke="#7d8b85" stroke-width="2"/></g>
+<g transform="translate(256 128)"><use href="#water"/><path d="m1 16 31 15 31-15" fill="none" stroke="#2d647c" stroke-width="2"/></g>
+<g transform="translate(320 128)"><use href="#sand"/><path d="m1 16 31 15 31-15" fill="none" stroke="#a9945f" stroke-width="2"/></g>
+<g transform="translate(0 160)"><use href="#grass"/><path d="m20 15 2-2 2 2-2 2Z m23 2 2-2 2 2-2 2Z" fill="#e8e9a2"/></g>
+<g transform="translate(64 160)"><use href="#path"/><path d="m11 16 3-2m26 5 3-2" stroke="#8d7454" stroke-width="2"/></g>
+<g transform="translate(128 160)"><use href="#road"/><path d="m18 16 5-2m17 2 5-2" stroke="#9ba6aa" stroke-width="1.5"/></g>
+<g transform="translate(192 160)"><use href="#pave"/><path d="m22 16 4-2m12 5 4-2" stroke="#eef0e9" stroke-width="1.5"/></g>
+<g transform="translate(256 160)"><use href="#water"/><path d="m19 15 7-3m10 8 6-2" stroke="#d1f3ec" stroke-width="2"/></g>
+<g transform="translate(320 160)"><use href="#sand"/><path d="m18 17 3-1m18 3 3-2" stroke="#f1dfa0" stroke-width="2"/></g>
+</svg>
